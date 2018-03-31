@@ -13,10 +13,11 @@ contract p2p {
     struct Payment {
         uint amount;
         uint agentId;
+        address agentAdress;
         uint vendorId;
         address client;
-        // bool agentWithraw;
-        // bool vendorWithdraw;
+        bool agentWithraw;
+        bool vendorWithdraw;
     }
     mapping (uint => Payment[]) public payments;
     Vendor[] public vendors;
@@ -25,8 +26,8 @@ contract p2p {
     uint agentCounter;
     function pay(uint vendorId, uint agentId ) public payable
     {
-        payments[vendorId].push(Payment(msg.value,agentId,vendorId,msg.sender));
-        // ,false,false));
+        payments[vendorId].push(Payment(msg.value,agentId,agents[agentId].owner,vendorId,msg.sender,false,false));
+        // ));
         require(msg.value>100);
         uint agentFee = vendors[vendorId].agentShare * msg.value/100;
         agents[agentId].owner.transfer(agentFee);
@@ -43,9 +44,12 @@ contract p2p {
         return agentCounter;
     }
     // function withdraw(uint vendorId) public
-    // {
-    //     for (var index = 0; index < array.length; index++) {
-            
+    // { 
+    //     for (var index = 0; index < payments[vendorId].length; index++) {
+    //         if (!payments[vendorId][index].agentWithraw && payments[vendorId][index].agentAdress == msg.sender)
+    //         {
+
+    //         }
     //     }
     // }
 
