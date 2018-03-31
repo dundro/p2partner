@@ -1,5 +1,5 @@
 # p2partner
-var address = "0x439e9d186970e47c7f9cdf34f24d757b3de5ee9b"
+```var address = "0x439e9d186970e47c7f9cdf34f24d757b3de5ee9b"
 var abi  = [
 	{
 		"constant": true,
@@ -156,3 +156,4 @@ instance.createVendor(10,(error,result) => {console.log(result)}) //создат
 instance.registerAgent()// создает агента с адресом вызывающего
 instance.pay.sendTransaction(0,0,{value:web3.toWei(0.01,'ether')},(error,result)=>{console.log(result)})
 //оплата от клиента
+```
