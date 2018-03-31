@@ -1,0 +1,1613 @@
+{
+  "contractName": "p2p",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "registerAgent",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "agents",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "vendors",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "agentShare",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "vendorId",
+          "type": "uint256"
+        },
+        {
+          "name": "agentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "pay",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "agentShare",
+          "type": "uint256"
+        }
+      ],
+      "name": "createVendor",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6106b88061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806335eb520814610072578063513856c81461009b578063a08d986d14610105578063ef48eee614610176578063ffbf7ab914610197575b600080fd5b341561007d57600080fd5b6100856101ce565b6040518082815260200191505060405180910390f35b34156100a657600080fd5b6100bc6004808035906020019091905050610293565b604051808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390f35b341561011057600080fd5b61012660048080359060200190919050506102e6565b604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b610195600480803590602001909190803590602001909190505061033f565b005b34156101a257600080fd5b6101b8600480803590602001909190505061041c565b6040518082815260200191505060405180910390f35b60006001600460008282540192505081905550600380548060010182816101f591906104f4565b91600052602060002090600202016000604080519081016040528060045481526020013373ffffffffffffffffffffffffffffffffffffffff1681525090919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505050600454905090565b6003818154811015156102a257fe5b90600052602060002090600202016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905082565b6001818154811015156102f557fe5b90600052602060002090600302016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020154905083565b60008083815260200190815260200160002080548060010182816103639190610526565b916000526020600020906004020160006080604051908101604052803481526020018581526020018681526020013373ffffffffffffffffffffffffffffffffffffffff16815250909190915060008201518160000155602082015181600101556040820151816002015560608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050505050565b60006001600260008282540192505081905550600180548060010182816104439190610558565b9160005260206000209060030201600060606040519081016040528060025481526020013373ffffffffffffffffffffffffffffffffffffffff1681526020018681525090919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550604082015181600201555050506002549050919050565b81548183558181151161052157600202816002028360005260206000209182019101610520919061058a565b5b505050565b8154818355818115116105535760040281600402836000526020600020918201910161055291906105d8565b5b505050565b815481835581811511610585576003028160030283600052602060002091820191016105849190610636565b5b505050565b6105d591905b808211156105d1576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905550600201610590565b5090565b90565b61063391905b8082111561062f57600080820160009055600182016000905560028201600090556003820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055506004016105de565b5090565b90565b61068991905b80821115610685576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905560028201600090555060030161063c565b5090565b905600a165627a7a72305820fc3ddb0fbf3df5f02bff33ded4658bc32dd860b5831913b1110ce0947baee68f0029",
+  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806335eb520814610072578063513856c81461009b578063a08d986d14610105578063ef48eee614610176578063ffbf7ab914610197575b600080fd5b341561007d57600080fd5b6100856101ce565b6040518082815260200191505060405180910390f35b34156100a657600080fd5b6100bc6004808035906020019091905050610293565b604051808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390f35b341561011057600080fd5b61012660048080359060200190919050506102e6565b604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b610195600480803590602001909190803590602001909190505061033f565b005b34156101a257600080fd5b6101b8600480803590602001909190505061041c565b6040518082815260200191505060405180910390f35b60006001600460008282540192505081905550600380548060010182816101f591906104f4565b91600052602060002090600202016000604080519081016040528060045481526020013373ffffffffffffffffffffffffffffffffffffffff1681525090919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505050600454905090565b6003818154811015156102a257fe5b90600052602060002090600202016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905082565b6001818154811015156102f557fe5b90600052602060002090600302016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020154905083565b60008083815260200190815260200160002080548060010182816103639190610526565b916000526020600020906004020160006080604051908101604052803481526020018581526020018681526020013373ffffffffffffffffffffffffffffffffffffffff16815250909190915060008201518160000155602082015181600101556040820151816002015560608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050505050565b60006001600260008282540192505081905550600180548060010182816104439190610558565b9160005260206000209060030201600060606040519081016040528060025481526020013373ffffffffffffffffffffffffffffffffffffffff1681526020018681525090919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550604082015181600201555050506002549050919050565b81548183558181151161052157600202816002028360005260206000209182019101610520919061058a565b5b505050565b8154818355818115116105535760040281600402836000526020600020918201910161055291906105d8565b5b505050565b815481835581811511610585576003028160030283600052602060002091820191016105849190610636565b5b505050565b6105d591905b808211156105d1576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905550600201610590565b5090565b90565b61063391905b8082111561062f57600080820160009055600182016000905560028201600090556003820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055506004016105de565b5090565b90565b61068991905b80821115610685576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905560028201600090555060030161063c565b5090565b905600a165627a7a72305820fc3ddb0fbf3df5f02bff33ded4658bc32dd860b5831913b1110ce0947baee68f0029",
+  "sourceMap": "27:1027:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:1027:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;889:163;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;434:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;381:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;484:203;;;;;;;;;;;;;;;;;;;;;;;;;;692:192;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;889:163;930:4;962:1;946:12;;:17;;;;;;;;;;;973:6;:43;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;985:30;;;;;;;;;991:12;;985:30;;;;1004:10;985:30;;;;;973:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1033:12;;1026:19;;889:163;:::o;434:21::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;381:23::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;484:203::-;609:8;:18;618:8;609:18;;;;;;;;;;;:71;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;633:46;;;;;;;;;641:9;633:46;;;;651:7;633:46;;;;659:8;633:46;;;;668:10;633:46;;;;;609:71;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;484:203;;:::o;692:192::-;747:4;779:1;762:13;;:18;;;;;;;;;;;790:7;:57;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;803:43;;;;;;;;;810:13;;803:43;;;;824:10;803:43;;;;;;835:10;803:43;;;790:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;864:13;;857:20;;692:192;;;:::o;27:1027::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^ 0.4.18;\n\ncontract p2p {\n    struct Vendor {\n        uint id;\n        address owner;\n        uint agentShare;\n    }\n    struct Agent {\n        uint id;\n        address owner;\n    }\n    struct Payment {\n        // uint id;\n        uint amount;\n        uint agentId;\n        uint vendorId;\n        address client;\n    }\n    mapping (uint => Payment[]) payments;\n    Vendor[] public vendors;\n    uint vendorCounter;\n    Agent[] public agents;\n    uint agentCounter;\n    function pay(uint vendorId, uint agentId ) public payable\n    {\n        // address vendor = vendors[vendorId].owner;\n        payments[vendorId].push(Payment(msg.value,agentId,vendorId,msg.sender));\n    }\n    function createVendor(uint agentShare) public returns (uint){\n        vendorCounter += 1;\n        vendors.push(Vendor(vendorCounter,msg.sender,agentShare));\n        return vendorCounter;\n    }\n    function registerAgent() public returns (uint) {\n        agentCounter += 1;\n        agents.push(Agent(agentCounter,msg.sender));\n        return agentCounter;\n    }\n}",
+  "sourcePath": "/Users/vladimirpopov/Blockchain/P2Partner/contracts/p2p.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/vladimirpopov/Blockchain/P2Partner/contracts/p2p.sol",
+      "exportedSymbols": {
+        "p2p": [
+          107
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:25:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            107
+          ],
+          "name": "p2p",
+          "scope": 108
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "p2p.Vendor",
+              "name": "Vendor",
+              "scope": 107,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "70:4:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "70:7:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "owner",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "87:7:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "87:13:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "agentShare",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 6,
+                    "name": "ElementaryTypeName",
+                    "src": "110:4:0"
+                  }
+                ],
+                "id": 7,
+                "name": "VariableDeclaration",
+                "src": "110:15:0"
+              }
+            ],
+            "id": 8,
+            "name": "StructDefinition",
+            "src": "46:86:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "p2p.Agent",
+              "name": "Agent",
+              "scope": 107,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 9,
+                    "name": "ElementaryTypeName",
+                    "src": "160:4:0"
+                  }
+                ],
+                "id": 10,
+                "name": "VariableDeclaration",
+                "src": "160:7:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "owner",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "177:7:0"
+                  }
+                ],
+                "id": 12,
+                "name": "VariableDeclaration",
+                "src": "177:13:0"
+              }
+            ],
+            "id": 13,
+            "name": "StructDefinition",
+            "src": "137:60:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "p2p.Payment",
+              "name": "Payment",
+              "scope": 107,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "amount",
+                  "scope": 22,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 14,
+                    "name": "ElementaryTypeName",
+                    "src": "247:4:0"
+                  }
+                ],
+                "id": 15,
+                "name": "VariableDeclaration",
+                "src": "247:11:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "agentId",
+                  "scope": 22,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 16,
+                    "name": "ElementaryTypeName",
+                    "src": "268:4:0"
+                  }
+                ],
+                "id": 17,
+                "name": "VariableDeclaration",
+                "src": "268:12:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "vendorId",
+                  "scope": 22,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 18,
+                    "name": "ElementaryTypeName",
+                    "src": "290:4:0"
+                  }
+                ],
+                "id": 19,
+                "name": "VariableDeclaration",
+                "src": "290:13:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "client",
+                  "scope": 22,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 20,
+                    "name": "ElementaryTypeName",
+                    "src": "313:7:0"
+                  }
+                ],
+                "id": 21,
+                "name": "VariableDeclaration",
+                "src": "313:14:0"
+              }
+            ],
+            "id": 22,
+            "name": "StructDefinition",
+            "src": "202:132:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "payments",
+              "scope": 107,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct p2p.Payment storage ref[] storage ref)",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct p2p.Payment storage ref[] storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 23,
+                    "name": "ElementaryTypeName",
+                    "src": "348:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "struct p2p.Payment storage ref[] storage pointer"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "Payment",
+                          "referencedDeclaration": 22,
+                          "type": "struct p2p.Payment storage pointer"
+                        },
+                        "id": 24,
+                        "name": "UserDefinedTypeName",
+                        "src": "356:7:0"
+                      }
+                    ],
+                    "id": 25,
+                    "name": "ArrayTypeName",
+                    "src": "356:9:0"
+                  }
+                ],
+                "id": 26,
+                "name": "Mapping",
+                "src": "339:27:0"
+              }
+            ],
+            "id": 27,
+            "name": "VariableDeclaration",
+            "src": "339:36:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "vendors",
+              "scope": 107,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct p2p.Vendor storage ref[] storage ref",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct p2p.Vendor storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Vendor",
+                      "referencedDeclaration": 8,
+                      "type": "struct p2p.Vendor storage pointer"
+                    },
+                    "id": 28,
+                    "name": "UserDefinedTypeName",
+                    "src": "381:6:0"
+                  }
+                ],
+                "id": 29,
+                "name": "ArrayTypeName",
+                "src": "381:8:0"
+              }
+            ],
+            "id": 30,
+            "name": "VariableDeclaration",
+            "src": "381:23:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "vendorCounter",
+              "scope": 107,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 31,
+                "name": "ElementaryTypeName",
+                "src": "410:4:0"
+              }
+            ],
+            "id": 32,
+            "name": "VariableDeclaration",
+            "src": "410:18:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "agents",
+              "scope": 107,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct p2p.Agent storage ref[] storage ref",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct p2p.Agent storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Agent",
+                      "referencedDeclaration": 13,
+                      "type": "struct p2p.Agent storage pointer"
+                    },
+                    "id": 33,
+                    "name": "UserDefinedTypeName",
+                    "src": "434:5:0"
+                  }
+                ],
+                "id": 34,
+                "name": "ArrayTypeName",
+                "src": "434:7:0"
+              }
+            ],
+            "id": 35,
+            "name": "VariableDeclaration",
+            "src": "434:21:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "agentCounter",
+              "scope": 107,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 36,
+                "name": "ElementaryTypeName",
+                "src": "461:4:0"
+              }
+            ],
+            "id": 37,
+            "name": "VariableDeclaration",
+            "src": "461:17:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "pay",
+              "payable": true,
+              "scope": 107,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "vendorId",
+                      "scope": 59,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 38,
+                        "name": "ElementaryTypeName",
+                        "src": "497:4:0"
+                      }
+                    ],
+                    "id": 39,
+                    "name": "VariableDeclaration",
+                    "src": "497:13:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "agentId",
+                      "scope": 59,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 40,
+                        "name": "ElementaryTypeName",
+                        "src": "512:4:0"
+                      }
+                    ],
+                    "id": 41,
+                    "name": "VariableDeclaration",
+                    "src": "512:12:0"
+                  }
+                ],
+                "id": 42,
+                "name": "ParameterList",
+                "src": "496:30:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 43,
+                "name": "ParameterList",
+                "src": "546:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Payment_$22_memory",
+                                  "typeString": "struct p2p.Payment memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct p2p.Payment storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct p2p.Payment storage ref[] storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 27,
+                                      "type": "mapping(uint256 => struct p2p.Payment storage ref[] storage ref)",
+                                      "value": "payments"
+                                    },
+                                    "id": 44,
+                                    "name": "Identifier",
+                                    "src": "609:8:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 39,
+                                      "type": "uint256",
+                                      "value": "vendorId"
+                                    },
+                                    "id": 45,
+                                    "name": "Identifier",
+                                    "src": "618:8:0"
+                                  }
+                                ],
+                                "id": 46,
+                                "name": "IndexAccess",
+                                "src": "609:18:0"
+                              }
+                            ],
+                            "id": 47,
+                            "name": "MemberAccess",
+                            "src": "609:23:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct p2p.Payment memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22,
+                                  "type": "type(struct p2p.Payment storage pointer)",
+                                  "value": "Payment"
+                                },
+                                "id": 48,
+                                "name": "Identifier",
+                                "src": "633:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 120,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 49,
+                                    "name": "Identifier",
+                                    "src": "641:3:0"
+                                  }
+                                ],
+                                "id": 50,
+                                "name": "MemberAccess",
+                                "src": "641:9:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 41,
+                                  "type": "uint256",
+                                  "value": "agentId"
+                                },
+                                "id": 51,
+                                "name": "Identifier",
+                                "src": "651:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 39,
+                                  "type": "uint256",
+                                  "value": "vendorId"
+                                },
+                                "id": 52,
+                                "name": "Identifier",
+                                "src": "659:8:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 120,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 53,
+                                    "name": "Identifier",
+                                    "src": "668:3:0"
+                                  }
+                                ],
+                                "id": 54,
+                                "name": "MemberAccess",
+                                "src": "668:10:0"
+                              }
+                            ],
+                            "id": 55,
+                            "name": "FunctionCall",
+                            "src": "633:46:0"
+                          }
+                        ],
+                        "id": 56,
+                        "name": "FunctionCall",
+                        "src": "609:71:0"
+                      }
+                    ],
+                    "id": 57,
+                    "name": "ExpressionStatement",
+                    "src": "609:71:0"
+                  }
+                ],
+                "id": 58,
+                "name": "Block",
+                "src": "546:141:0"
+              }
+            ],
+            "id": 59,
+            "name": "FunctionDefinition",
+            "src": "484:203:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "createVendor",
+              "payable": false,
+              "scope": 107,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "agentShare",
+                      "scope": 84,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 60,
+                        "name": "ElementaryTypeName",
+                        "src": "714:4:0"
+                      }
+                    ],
+                    "id": 61,
+                    "name": "VariableDeclaration",
+                    "src": "714:15:0"
+                  }
+                ],
+                "id": 62,
+                "name": "ParameterList",
+                "src": "713:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 84,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 63,
+                        "name": "ElementaryTypeName",
+                        "src": "747:4:0"
+                      }
+                    ],
+                    "id": 64,
+                    "name": "VariableDeclaration",
+                    "src": "747:4:0"
+                  }
+                ],
+                "id": 65,
+                "name": "ParameterList",
+                "src": "746:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 32,
+                              "type": "uint256",
+                              "value": "vendorCounter"
+                            },
+                            "id": 66,
+                            "name": "Identifier",
+                            "src": "762:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 67,
+                            "name": "Literal",
+                            "src": "779:1:0"
+                          }
+                        ],
+                        "id": 68,
+                        "name": "Assignment",
+                        "src": "762:18:0"
+                      }
+                    ],
+                    "id": 69,
+                    "name": "ExpressionStatement",
+                    "src": "762:18:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Vendor_$8_memory",
+                                  "typeString": "struct p2p.Vendor memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct p2p.Vendor storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 30,
+                                  "type": "struct p2p.Vendor storage ref[] storage ref",
+                                  "value": "vendors"
+                                },
+                                "id": 70,
+                                "name": "Identifier",
+                                "src": "790:7:0"
+                              }
+                            ],
+                            "id": 72,
+                            "name": "MemberAccess",
+                            "src": "790:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct p2p.Vendor memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 8,
+                                  "type": "type(struct p2p.Vendor storage pointer)",
+                                  "value": "Vendor"
+                                },
+                                "id": 73,
+                                "name": "Identifier",
+                                "src": "803:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 32,
+                                  "type": "uint256",
+                                  "value": "vendorCounter"
+                                },
+                                "id": 74,
+                                "name": "Identifier",
+                                "src": "810:13:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 120,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 75,
+                                    "name": "Identifier",
+                                    "src": "824:3:0"
+                                  }
+                                ],
+                                "id": 76,
+                                "name": "MemberAccess",
+                                "src": "824:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 61,
+                                  "type": "uint256",
+                                  "value": "agentShare"
+                                },
+                                "id": 77,
+                                "name": "Identifier",
+                                "src": "835:10:0"
+                              }
+                            ],
+                            "id": 78,
+                            "name": "FunctionCall",
+                            "src": "803:43:0"
+                          }
+                        ],
+                        "id": 79,
+                        "name": "FunctionCall",
+                        "src": "790:57:0"
+                      }
+                    ],
+                    "id": 80,
+                    "name": "ExpressionStatement",
+                    "src": "790:57:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 65
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 32,
+                          "type": "uint256",
+                          "value": "vendorCounter"
+                        },
+                        "id": 81,
+                        "name": "Identifier",
+                        "src": "864:13:0"
+                      }
+                    ],
+                    "id": 82,
+                    "name": "Return",
+                    "src": "857:20:0"
+                  }
+                ],
+                "id": 83,
+                "name": "Block",
+                "src": "752:132:0"
+              }
+            ],
+            "id": 84,
+            "name": "FunctionDefinition",
+            "src": "692:192:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "registerAgent",
+              "payable": false,
+              "scope": 107,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 85,
+                "name": "ParameterList",
+                "src": "911:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 106,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 86,
+                        "name": "ElementaryTypeName",
+                        "src": "930:4:0"
+                      }
+                    ],
+                    "id": 87,
+                    "name": "VariableDeclaration",
+                    "src": "930:4:0"
+                  }
+                ],
+                "id": 88,
+                "name": "ParameterList",
+                "src": "929:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 37,
+                              "type": "uint256",
+                              "value": "agentCounter"
+                            },
+                            "id": 89,
+                            "name": "Identifier",
+                            "src": "946:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 90,
+                            "name": "Literal",
+                            "src": "962:1:0"
+                          }
+                        ],
+                        "id": 91,
+                        "name": "Assignment",
+                        "src": "946:17:0"
+                      }
+                    ],
+                    "id": 92,
+                    "name": "ExpressionStatement",
+                    "src": "946:17:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Agent_$13_memory",
+                                  "typeString": "struct p2p.Agent memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct p2p.Agent storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 35,
+                                  "type": "struct p2p.Agent storage ref[] storage ref",
+                                  "value": "agents"
+                                },
+                                "id": 93,
+                                "name": "Identifier",
+                                "src": "973:6:0"
+                              }
+                            ],
+                            "id": 95,
+                            "name": "MemberAccess",
+                            "src": "973:11:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct p2p.Agent memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 13,
+                                  "type": "type(struct p2p.Agent storage pointer)",
+                                  "value": "Agent"
+                                },
+                                "id": 96,
+                                "name": "Identifier",
+                                "src": "985:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 37,
+                                  "type": "uint256",
+                                  "value": "agentCounter"
+                                },
+                                "id": 97,
+                                "name": "Identifier",
+                                "src": "991:12:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 120,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 98,
+                                    "name": "Identifier",
+                                    "src": "1004:3:0"
+                                  }
+                                ],
+                                "id": 99,
+                                "name": "MemberAccess",
+                                "src": "1004:10:0"
+                              }
+                            ],
+                            "id": 100,
+                            "name": "FunctionCall",
+                            "src": "985:30:0"
+                          }
+                        ],
+                        "id": 101,
+                        "name": "FunctionCall",
+                        "src": "973:43:0"
+                      }
+                    ],
+                    "id": 102,
+                    "name": "ExpressionStatement",
+                    "src": "973:43:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 88
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 37,
+                          "type": "uint256",
+                          "value": "agentCounter"
+                        },
+                        "id": 103,
+                        "name": "Identifier",
+                        "src": "1033:12:0"
+                      }
+                    ],
+                    "id": 104,
+                    "name": "Return",
+                    "src": "1026:19:0"
+                  }
+                ],
+                "id": 105,
+                "name": "Block",
+                "src": "936:116:0"
+              }
+            ],
+            "id": 106,
+            "name": "FunctionDefinition",
+            "src": "889:163:0"
+          }
+        ],
+        "id": 107,
+        "name": "ContractDefinition",
+        "src": "27:1027:0"
+      }
+    ],
+    "id": 108,
+    "name": "SourceUnit",
+    "src": "0:1054:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+  },
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-31T12:34:13.147Z"
+}
