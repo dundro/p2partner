@@ -1,18 +1,33 @@
 pragma solidity ^ 0.4.18;
-import "./LeadUtils.sol";
+import "./leadUtils.sol";
+// import "./strings.sol";
+// library leadUtils {
+//     using strings for *;
+//     function checkChallenge(string challenge) public pure returns(bool) {
+//         var s = challenge.toSlice();
+//         var delim = ".".toSlice();
+//         var parts = new string[](s.count(delim) + 1);
+//         for(uint i = 0; i < parts.length; i++) {
+//             parts[i] = s.split(delim).toString();
+//         }
+//         return (keccak256(parts[i]) == keccak256("dispute"));//TODO: add RSAchecksig   
+//     }
+// }
 contract Lead {
-    using LeadUtils for *;
+    // using leadUtils for *;
     string public data;
-    uint expiration;
-    address agent;
-    address seller;
-    bool isSettled;
-    bool isDisputed;
-    uint agentShare;
-    function Lead(uint _agentShare, string _data, address _seller) public{
+    uint public expiration;
+    address public agent;
+    address public seller;
+    bool public isSettled;
+    bool public isDisputed;
+    uint public agentShare;
+    function Lead(uint _agentShare, string _data, address _seller,uint _expiration) public{
+        agent = msg.sender;
         agentShare = _agentShare;
         data = _data;
         seller = _seller;
+        expiration = _expiration;
     }
     function settle() public{
         isSettled = true;
@@ -30,6 +45,6 @@ contract Lead {
     }
     function dispute(string challenge) public
     {
-        if(LeadUtils.checkChallenge(challenge)) isDisputed = true;
+        if(leadUtils.checkChallenge(challenge)) isDisputed = true;
     }
 } 

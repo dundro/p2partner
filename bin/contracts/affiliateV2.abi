@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"agentShare","type":"uint256"},{"name":"hashedData","type":"string"},{"name":"seller","type":"address"}],"name":"createContract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

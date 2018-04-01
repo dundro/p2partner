@@ -1,6 +1,6 @@
 pragma solidity ^ 0.4.18;
 import "./strings.sol";
-library LeadUtils {
+library leadUtils {
     using strings for *;
     function checkChallenge(string challenge) public pure returns(bool) {
         var s = challenge.toSlice();
